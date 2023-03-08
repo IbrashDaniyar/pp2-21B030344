@@ -1,9 +1,8 @@
-import os
-print("Test a path exists or not:")
-#C:\Users\ASUS\Desktop\PP2 
-path = input()
-print(os.path.exists(path))
-print("\nFile name of the path:")
-print(os.path.basename(path))
-print("\nDir name of the path:")
-print(os.path.dirname(path))
+filename = input()  # replace with your file name
+#C:\Users\ASUS\Desktop\PP2\tsis6\dir\4.py 
+with open(filename, "r") as file:
+    count = 0
+    for line in file:
+        count += 1
+
+print("The number of lines in path is: ", {count})
